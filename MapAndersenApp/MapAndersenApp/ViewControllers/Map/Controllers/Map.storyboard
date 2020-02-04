@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location users-->
+        <scene sceneID="4rh-dL-E1t">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" title="Location users" id="lIm-9g-daY" customClass="MapViewController" customModule="MapAndersenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eh3-b5-1bh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dif-SX-1nj" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dif-SX-1nj" firstAttribute="trailing" secondItem="DMB-Lm-YG0" secondAttribute="trailing" id="CFp-MU-b3X"/>
+                            <constraint firstAttribute="bottom" secondItem="dif-SX-1nj" secondAttribute="bottom" id="KRr-kE-gzJ"/>
+                            <constraint firstItem="dif-SX-1nj" firstAttribute="top" secondItem="DMB-Lm-YG0" secondAttribute="top" id="s0a-a3-gKT"/>
+                            <constraint firstItem="dif-SX-1nj" firstAttribute="leading" secondItem="DMB-Lm-YG0" secondAttribute="leading" id="tSV-Hm-EfF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DMB-Lm-YG0"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="dif-SX-1nj" id="tAL-H0-bkA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6n-fS-SVq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844.9275362318842" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>

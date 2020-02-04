@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingScreen">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AoP-bV-Mjc">
+                    <rect key="frame" x="0.0" y="20" width="414" height="856"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfg-y7-7df">
+                            <rect key="frame" x="172" y="20" width="70" height="70"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="sis-Zq-9AM">
+                                    <rect key="frame" x="25" y="25" width="20" height="20"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="sis-Zq-9AM" firstAttribute="centerX" secondItem="nfg-y7-7df" secondAttribute="centerX" id="Ca7-uq-dou"/>
+                                <constraint firstAttribute="height" constant="70" id="SlA-GI-Umh"/>
+                                <constraint firstItem="sis-Zq-9AM" firstAttribute="centerY" secondItem="nfg-y7-7df" secondAttribute="centerY" id="U0A-Si-DpF"/>
+                                <constraint firstAttribute="width" constant="70" id="bC2-G7-QlW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rn-In-QRM">
+                            <rect key="frame" x="172" y="393" width="70" height="70"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="V7U-4J-Sj3">
+                                    <rect key="frame" x="25" y="25" width="20" height="20"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="V7U-4J-Sj3" firstAttribute="centerX" secondItem="7Rn-In-QRM" secondAttribute="centerX" id="FCG-ml-4dJ"/>
+                                <constraint firstAttribute="width" constant="70" id="Mka-SE-3mJ"/>
+                                <constraint firstAttribute="height" constant="70" id="TDo-Y0-2nS"/>
+                                <constraint firstItem="V7U-4J-Sj3" firstAttribute="centerY" secondItem="7Rn-In-QRM" secondAttribute="centerY" id="ks5-fa-6vo"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7n-km-8eS">
+                            <rect key="frame" x="172" y="766" width="70" height="70"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Le8-K2-FS6">
+                                    <rect key="frame" x="25" y="25" width="20" height="20"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Le8-K2-FS6" firstAttribute="centerY" secondItem="H7n-km-8eS" secondAttribute="centerY" id="JQB-cS-4VF"/>
+                                <constraint firstItem="Le8-K2-FS6" firstAttribute="centerX" secondItem="H7n-km-8eS" secondAttribute="centerX" id="M6I-Mn-EKT"/>
+                                <constraint firstAttribute="width" constant="70" id="kUS-bC-Tw7"/>
+                                <constraint firstAttribute="height" constant="70" id="ubC-fA-2Zt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="nfg-y7-7df" firstAttribute="top" secondItem="AoP-bV-Mjc" secondAttribute="top" constant="20" id="1Ua-Jj-q54"/>
+                        <constraint firstItem="7Rn-In-QRM" firstAttribute="centerY" secondItem="AoP-bV-Mjc" secondAttribute="centerY" id="UMK-NS-ewv"/>
+                        <constraint firstItem="7Rn-In-QRM" firstAttribute="centerX" secondItem="AoP-bV-Mjc" secondAttribute="centerX" id="g7r-wn-c17"/>
+                        <constraint firstItem="H7n-km-8eS" firstAttribute="centerX" secondItem="AoP-bV-Mjc" secondAttribute="centerX" id="oY9-yo-LQR"/>
+                        <constraint firstItem="nfg-y7-7df" firstAttribute="centerX" secondItem="AoP-bV-Mjc" secondAttribute="centerX" id="qZx-rx-MtC"/>
+                        <constraint firstAttribute="bottom" secondItem="H7n-km-8eS" secondAttribute="bottom" constant="20" id="w2X-1J-0zc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AoP-bV-Mjc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="1t6-6W-wFp"/>
+                <constraint firstAttribute="bottom" secondItem="AoP-bV-Mjc" secondAttribute="bottom" constant="20" symbolic="YES" id="6HR-C4-ikc"/>
+                <constraint firstItem="AoP-bV-Mjc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dAC-sh-50f"/>
+                <constraint firstItem="AoP-bV-Mjc" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="xvQ-mv-cep"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomView" destination="H7n-km-8eS" id="Rdq-zs-d27"/>
+                <outlet property="middleView" destination="7Rn-In-QRM" id="1Sn-KN-cbF"/>
+                <outlet property="topView" destination="nfg-y7-7df" id="KDM-7J-akw"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="150"/>
+        </view>
+    </objects>
+</document>

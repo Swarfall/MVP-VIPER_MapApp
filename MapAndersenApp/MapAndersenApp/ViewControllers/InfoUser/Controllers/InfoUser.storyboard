@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info User View Controller-->
+        <scene sceneID="yKT-FH-OvQ">
+            <objects>
+                <viewController storyboardIdentifier="InfoUserViewController" id="1QB-UQ-JO7" customClass="InfoUserViewController" customModule="MapAndersenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qdq-vL-ih2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V78-1B-2Aa">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V78-1B-2Aa" secondAttribute="height" multiplier="1:1" id="p2C-bY-3gE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V78-1B-2Aa" firstAttribute="centerX" secondItem="qdq-vL-ih2" secondAttribute="centerX" id="FZx-hx-eOa"/>
+                            <constraint firstItem="V78-1B-2Aa" firstAttribute="trailing" secondItem="mv1-mk-rd7" secondAttribute="trailing" id="ISs-a9-lPq"/>
+                            <constraint firstItem="V78-1B-2Aa" firstAttribute="centerY" secondItem="qdq-vL-ih2" secondAttribute="centerY" id="Rwx-E1-GVh"/>
+                            <constraint firstItem="V78-1B-2Aa" firstAttribute="leading" secondItem="mv1-mk-rd7" secondAttribute="leading" id="ilc-5w-2Td"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mv1-mk-rd7"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="V78-1B-2Aa" id="ijd-GP-XbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4g-zA-W4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97.101449275362327" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+</document>
