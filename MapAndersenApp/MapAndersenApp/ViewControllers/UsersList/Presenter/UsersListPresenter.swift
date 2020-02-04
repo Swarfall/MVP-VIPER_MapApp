@@ -16,7 +16,7 @@ protocol UsersListPresenterProtocol {
     func viewDidLoad()
     func getDataForPagination()
     func users() -> [UserViewModel]
-    func refreshUsers()
+    func refreshUsers() 
 }
 
 class UsersListPresenter {
